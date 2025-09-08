@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivani Mahar | Web Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="logo"> 
+      <img src="assets/icons/js-logo.svg" alt="SM Logo" class="logo-icon">
+      <span>Shivani</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hi There, <br> I'm <span class="highlight">Shivani <span class="sable">Mahar</span></span></h1>
+      <h2>I Am Into <span class="typed-text" id="typed">Web Development</span><span class="cursor">|</span></h2>
+      <a href="#about" class="btn">About Me <span class="arrow">⬇</span></a>
+
+      <div class="social-icons">
+        <a href="#"><img src="https://tse2.mm.bing.net/th/id/OIP.Vwbn6KG7YRe_3u6_X_sN4AAAAA?w=350&h=350&rs=1&pid=ImgDetMain&o=7&rm=3" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png" alt="GitHub"></a>
+        <a href="#"><img src="https://cdn.pixabay.com/photo/2017/08/23/11/30/twitter-2672572_1280.jpg" alt="Twitter"></a>
+        <a href="#"><img src="https://tse4.mm.bing.net/th/id/OIP.9GePYPo_rTpZpV-6GpETQAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Telegram"></a>
+        <a href="#"><img src="https://tse3.mm.bing.net/th/id/OIP.xa0FgRBsvMi7bmVNCDYsCgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn.dribbble.com/users/2592071/screenshots/7327591/logo-artboard_2_4x.png" alt="Dev.to"></a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="png.jpg" alt="Avatar">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer who enjoys building beautiful and functional web applications using modern technologies like HTML, CSS, JavaScript, and frameworks like React.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A responsive portfolio to showcase my work and skills.</p>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>Simple weather app using JavaScript and OpenWeatherMap API.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Shivani Mahar. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="scroll-top">↑</button>
+
+  <!-- Typing Animation Script -->
+  <script>
+    const text = ["Web Development", "Frontend Designing", "JavaScript Enthusiast"];
+    let i = 0, j = 0, currentText = '', isDeleting = false;
+    const typedText = document.getElementById('typed');
+
+    function type() {
+      currentText = text[i];
+      let displayText = isDeleting ? currentText.substring(0, j--) : currentText.substring(0, j++);
+
+      typedText.textContent = displayText;
+
+      if (!isDeleting && j === currentText.length) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % text.length;
+        setTimeout(type, 200);
+      } else {
+        setTimeout(type, isDeleting ? 50 : 100);
+      }
+    }
+    type();
+  </script>
+
+</body>
+</html>

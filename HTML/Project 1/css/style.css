@@ -1,0 +1,158 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #bf2026; /* Zomato's signature red */
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Main section */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* First section styles */
+main section:first-child {
+    position: relative;
+    background: url('/zomato.jpeg') no-repeat center center/cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+main section:first-child img {
+    display: none; /* Hide the img element since we're using background */
+}
+
+main section:first-child p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+main section:first-child input {
+    width: 300px;
+    max-width: 90%;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+main section:first-child input:focus {
+    box-shadow: 0 0 8px #bf2026;
+}
+
+/* Food delivery info section */
+.food-delivery-info {
+    margin-top: 40px;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.food-delivery-info h2 {
+    font-size: 2rem;
+    color: #bf2026;
+    margin-bottom: 15px;
+}
+
+.food-delivery-info p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food-delivery-info ul {
+    list-style-type: disc;
+    margin-bottom: 25px;
+    color: #444;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food-delivery-info ul li {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.food-delivery-info button {
+    background-color: #bf2026;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.food-delivery-info button:hover {
+    background-color: #d33a3a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #eee;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}

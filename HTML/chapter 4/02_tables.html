@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - HTML</title>
+</head>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        border: 2px solid black;
+    }
+
+    th {
+        background-color: #17069d;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+</style>
+
+
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <!-- thead is head of the table -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+
+        </thead>
+        <!-- tbody is body of the table -->
+        <tbody>
+            <tr>
+                <td>Shivani</td>
+                <td>Software Engineer</td>
+                <td>12 LPA</td>
+            </tr>
+
+            <tr>
+                <td>Rohan</td>
+                <td>Software Engineer</td>
+                <td>8 LPA</td>
+            </tr>
+
+            <tr>
+                <td>Shivam</td>
+                <td>ML Engineer</td>
+                <td>10 LPA</td>
+            </tr>
+
+            <tr>
+                <td>Renuka</td>
+                <td>AI Engineer</td>
+                <td>09 LPA</td>
+            </tr>
+
+            <tr>
+                <td>Thank</td>
+                <td colspan="2">You</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

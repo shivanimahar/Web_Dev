@@ -1,0 +1,145 @@
+<!-- 4. Create a table displaying score of cricket Players in a match using HTML. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        < !DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Students Report</title><style>body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 700px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        thead {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #e9f5ff;
+        }
+
+        td:nth-child(2) {
+            font-weight: bold;
+            color: #555;
+        }
+
+        td:nth-child(2):not(:empty):not(:matches(:is([data-score]) > 50)) {
+            color: #d9534f;
+            /* red for low score, if you want custom logic later */
+        }
+
+        /* Optional: Style incomplete rows differently */
+        tbody tr td:only-child {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Students Report</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Virat Kohli</td>
+                <td>34</td>
+                <td>IPL 2024</td>
+            </tr>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>74</td>
+                <td>IPL 2024</td>
+            </tr>
+            <tr>
+                <td>Manish Pandey</td>
+                <td>54</td>
+                <td>IPL 2023</td>
+            </tr>
+            <tr>
+                <td>Harry</td>
+                <td>D</td>
+                <td>—</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+</style>
+</head>
+
+<body>
+    <table>
+        <caption>Students Report</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Virat Kohli</td>
+                <td>34</td>
+                <td>IPL 2024</td>
+            </tr>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>74</td>
+                <td>IPL 2024</td>
+            </tr>
+            <tr>
+                <td>Manish Pandey</td>
+                <td>54</td>
+                <td>IPL 2023</td>
+            </tr>
+            <tr>
+                <td>Harry</td>
+                <td>D</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

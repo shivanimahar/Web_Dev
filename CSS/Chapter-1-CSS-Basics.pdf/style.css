@@ -1,1 +1,8 @@
-39.00 min
+#first {
+    background-color: aqua;
+}
+
+.bg-blue {
+    background-color: blue;
+    color: white;
+        }

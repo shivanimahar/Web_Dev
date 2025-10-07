@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    background: red;
+    height: 304px;
+    color: white;
+
+}
+
+.green{
+    background-color: aquamarine;
+}
+/* m0+p0 */
+/* HSL: Hue, Saturation and lightness */

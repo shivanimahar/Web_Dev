@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            justify-content: center;
+            /* the best way to center items in a container */
+            background-color: aqua;
+            height: 100vh;
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            align-content: center;
+        }
+
+        .box1 {
+            height: 234px;
+            /* width: 345px; */
+            background-color: blue;
+            border: 2px solid black;
+            order: 4;
+            /* align-self: flex-end; */
+            flex-grow: 2;
+            /* flex-grow width bdayega lekin uske lie width ko htana pdega tbhi ye applicable hoga but flex grow depends on flex direction mtlb jis direction mai jese row ya column mai agar boxes ja rahe hai usi direction mai width change hogi boxes ki*/
+            flex-shrink: initial;
+
+        }
+
+        .box2 {
+            height: 234px;
+            /* width: 345px; */
+            background-color: red;
+            border: 2px solid black;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box2">box3</div>
+        <div class="box2">box4</div>
+    </div>
+</body>
+
+</html>
